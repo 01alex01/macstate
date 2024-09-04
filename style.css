@@ -123,11 +123,11 @@ header {
     height: 440px;
     display: flex;
     align-items: center;
-    border-radius: 1.5rem;
-    -webkit-border-radius: 1.5rem;
-    -moz-border-radius: 1.5rem;
-    -ms-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
+    border-radius: 0rem 3rem 3rem 0rem;
+    -webkit-border-radius: 0rem 3rem 3rem 0rem;
+    -moz-border-radius: 0rem 3rem 3rem 0rem;
+    -ms-border-radius: 0rem 3rem 3rem 0rem;
+    -o-border-radius: 0rem 3rem 3rem 0rem;
 }
 
 .home-text {
@@ -138,6 +138,57 @@ header {
     color: var(--bg-color);
     font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+.sales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2.4rem;
+}
+
+.sales .box {
+    padding: 20px;
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.sales .box:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    transition: 0.3s all linear;
+    -webkit-transition: 0.3s all linear;
+    -moz-transition: 0.3s all linear;
+    -ms-transition: 0.3s all linear;
+    -o-transition: 0.3s all linear;
+}
+
+.sales .box .bx {
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #f6f6f6;
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.sales .box h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 1rem 0 0.4rem;
+}
+
+.sales .box p {
+    font-size: 0.938rem;
 }
 
 .about {
